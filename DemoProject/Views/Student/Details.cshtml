@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+ 
+
+@model List<StudentModel>
+    
+    
+ 
+      
+    <table>
+        <tr>
+            <th> Id </th>
+            <th> Name </th>
+            <th> Age </th>
+            <th> Class  </th>
+            <th> Section</th>
+            <th> ParentName </th>
+            <th> MobileNumber </th>
+            <th> Hobbies </th>
+            <th> City </th>
+            <th> Gender </th>
+            <th> Address  </th>
+        
+        </tr>
+    @foreach (var category in Model  )
+    {
+     <tr>
+         
+      <td> @category.Id</td>
+      <td>@category.Name</td>
+      <td> @category.Age</td>
+      <td>@category.Class</td>
+      <td>@category.Section</td>
+      <td>@category.ParentName</td>
+      <td>@category.MobileNumber</td>
+      <td>@category.Hobbies</td>
+      <td>@category.City</td>
+      <td>@category.Gender</td>
+      <td>@category.Address</td>
+     </tr>
+     
+    } 
+    </table>

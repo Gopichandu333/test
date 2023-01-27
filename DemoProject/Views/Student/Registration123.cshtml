@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model StudentModel   
+
+
+
+<body> 
+    <form id="StudentDetails" method="post" action=@Url.Action("Registration")>
+        @Html.LabelFor(m => m.Id)
+<br />
+        @Html.TextBoxFor(m => m.Id)
+<br />
+        @Html.LabelFor(m => m.SurName)
+<br />
+        @Html.TextBoxFor(m => m.SurName)
+<br />
+
+        @Html.LabelFor(m=> m.Name)
+<br />
+        @Html.TextBoxFor(m => m.Name)
+<br />
+        @Html.LabelFor(m => m.Age)
+<br />
+        @Html.TextBoxFor(m => m.Age)
+<br />
+        @Html.LabelFor(m => m.Class)
+<br />
+        @Html.TextBoxFor(m => m.Class)
+<br />
+        @Html.LabelFor(m => m.Section)
+<br />
+        @Html.TextBoxFor(m => m.Section)
+<br />
+        @Html.LabelFor(m => m.ParentName)
+<br />
+        @Html.TextBoxFor(m => m.ParentName)
+<br />
+        @Html.LabelFor(m => m.MobileNumber)<br />
+        @Html.TextBoxFor(m => m.MobileNumber)<br />
+        @Html.LabelFor(m => m.Hobbies)<br />
+        @Html.TextBoxFor(m => m.Hobbies)<br />
+        @Html.LabelFor(m => m.City)<br />
+        @Html.TextBoxFor(m => m.City)<br />
+        @Html.LabelFor(m => m.Gender) :<br />
+        @Html.RadioButtonFor(m => m.Gender,"Male")
+        @Html.RadioButtonFor(m => m.Gender,"Female")<br />
+        @Html.LabelFor(m => m.Address)<br />
+        @Html.TextAreaFor(m => m.Address)<br />
+<input type="submit" value="Submit" name="action />
+<input type="submit" value="Cancel" name="action" />
+  </form>
+</body>
